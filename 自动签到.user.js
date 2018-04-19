@@ -9,7 +9,7 @@
 // @match        *://vip.jd.com/*
 // @match        *://vip.jr.jd.com/*
 // @match        *://u2.dmhy.org/*
-// @exclude      *://u2.dmhy.org/showup.php*
+//// @exclude      *://u2.dmhy.org/showup.php*
 //// @require      http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js
 // @require      https://code.jquery.com/jquery-latest.js
 // @grant       none
@@ -49,7 +49,13 @@ if ($('a#signed').length == 1) {
   setTimeout(function(){$('a#signed b').click();},1000);
   return true;
 }
-//u2
+//u2签到页
+var $message = $('textarea[name=\'message\']');
+if ($message.length == 1){
+	$message.text('半自动签到,请忽略此信息');
+  return true;
+}
+//U2非签到页
 var $a = $('.medium a[href=\'showup.php\']');
 if ($a.length == 1 && $a.text() != '已签到') {
   console.log('U2');
