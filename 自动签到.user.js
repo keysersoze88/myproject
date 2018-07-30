@@ -9,6 +9,7 @@
 // @match        *://vip.jd.com/*
 // @match        *://vip.jr.jd.com/*
 // @match        *://u2.dmhy.org/*
+// @match        *://www.52pojie.cn/*
 //// @exclude      *://u2.dmhy.org/showup.php*
 //// @require      http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js
 // @require      https://code.jquery.com/jquery-latest.js
@@ -50,7 +51,7 @@ if ($('a#signed').length == 1) {
   return true;
 }
 //u2签到页
-var $message = $('textarea[name=\'message\']');
+var $message = $('center textarea[name=\'message\']');
 if ($message.length == 1){
 	$message.text('半自动签到,请忽略此信息');
   return true;
@@ -62,4 +63,11 @@ if ($a.length == 1 && $a.text() != '已签到') {
   $a.attr('target', '_blank').get(0).click();
   return true;
 }
+//51破解
+//console.log($('a .qq_bind'));
+if ($('a .qq_bind').length == 2 ){
+  $('a .qq_bind').get(1).click();
+  return true;
+}
 console.log('没有需要签到的状态');
+
