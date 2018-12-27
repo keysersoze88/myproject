@@ -70,4 +70,3 @@ if ($('a .qq_bind').length == 2 ){
   return true;
 }
 console.log('没有需要签到的状态');
-
