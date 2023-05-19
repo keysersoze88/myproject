@@ -65,8 +65,8 @@ if ($a.length == 1 && $a.text() != '已签到') {
 }
 //51破解
 //console.log($('a .qq_bind'));
-if ($('a .qq_bind').length == 2 ){
-  $('a .qq_bind').get(1).click();
+if ($('a .qq_bind').length == 1 ){
+  $('a .qq_bind').get(0).click();
   return true;
 }
 console.log('没有需要签到的状态');
