@@ -2,7 +2,7 @@
 // @name        自动签到
 // @namespace   namespace
 // @description 自动签到
-// @version     1
+// @version     1.0.1
 // @match        *://totheglory.im/*
 // @match        *://hdchina.org/*
 // @match        *://www.hdchina.org/*
