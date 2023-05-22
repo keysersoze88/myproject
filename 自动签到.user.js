@@ -10,6 +10,7 @@
 // @match        *://vip.jr.jd.com/*
 // @match        *://u2.dmhy.org/*
 // @match        *://www.52pojie.cn/*
+// @exclude      *://www.52pojie.cn/home.php?mod=task*
 //// @exclude      *://u2.dmhy.org/showup.php*
 //// @require      http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js
 // @require      https://code.jquery.com/jquery-latest.js
