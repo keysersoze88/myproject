@@ -6,6 +6,7 @@
 // @match        *://totheglory.im/*
 // @match        *://hdchina.org/*
 // @match        *://www.hdchina.org/*
+// @match        *://hdwing.org/*
 // @match        *://vip.jd.com/*
 // @match        *://vip.jr.jd.com/*
 // @match        *://u2.dmhy.org/*
